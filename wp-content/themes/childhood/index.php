@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1 class="title underlined">Про компанию</h1>
+                        <h1 class="title underlined"><?= bloginfo('name'); ?></h1>
                         <div class="about__text">
                             Наша компания уже больше десяти лет дарит позитивные эмоции детям и их родителям. Мы воплощаем все детские мечты и помогаем родителям дарить счастливое детство!
                             <br> <br>
@@ -262,8 +262,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div id="map" class="contacts__map">
-                        </div>
+                        <!-- <div id="map" class="contacts__map">
+                        </div> -->
                     </div>
                 </div>
                 <div class="row">
@@ -507,3 +507,4 @@
 <?php
     get_footer();
 ?>
+
