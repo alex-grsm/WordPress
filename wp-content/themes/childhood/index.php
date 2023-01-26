@@ -373,7 +373,7 @@
                             </div>
                             <div class="contacts__mail">
                                 Или напишите нам на почту
-                                <a href="mailto:<? the_field('mail'); ?>"><? the_field('mail'); ?></a>
+                                <a href="mailto:<? the_field('mail', 2); ?>"><? the_field('mail', 2); ?></a>
                             </div>
                         </div>
                     </div>
