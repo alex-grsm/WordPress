@@ -270,7 +270,16 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="contacts__map acf-map">
+                        <div id="" class="contacts__map">
+                            <?php echo do_shortcode('
+                            [leaflet-map zoom=10 lat=43.65 lng=-79.385]
+
+                            [leaflet-marker]
+                            
+                            [leaflet-marker lat=43.68 lng=-79.275]
+                            
+                            [leaflet-marker lat=43.67 lng=-79.4]
+                            '); ?>
                         </div>
                     </div>
                 </div>
