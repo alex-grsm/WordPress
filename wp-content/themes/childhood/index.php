@@ -270,8 +270,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <!-- <div id="map" class="contacts__map">
-                        </div> -->
+                        <div class="contacts__map acf-map">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
