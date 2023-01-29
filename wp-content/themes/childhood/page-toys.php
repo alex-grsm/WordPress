@@ -42,7 +42,7 @@ get_header();
                                 <div class="toys__item-descr">
                                     <?php the_field('description_toys'); ?>                        
                                 </div>
-                                <div class="minibutton toys__trigger">Подробнее</div>
+                                <a href="<?= get_permalink(); ?>" class="minibutton toys__trigger">Подробнее</a>
                             </div>
                         </div>
                         
@@ -87,7 +87,7 @@ get_header();
                             <div class="toys__item-descr">
                                 <?php the_field('description_toys'); ?>                        
                             </div>
-                            <div class="minibutton toys__trigger">Подробнее</div>
+                            <a href="<?= get_permalink(); ?>" class="minibutton toys__trigger">Подробнее</a>
                         </div>
                     </div>
                     
@@ -102,7 +102,7 @@ get_header();
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
                 <div class="toys__alert">
-                    <? the_field('alert_text'); ?>
+                    <? the_field('alert_text', 2); ?>
                 </div>
             </div>
         </div>
