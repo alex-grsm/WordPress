@@ -55,7 +55,20 @@
                     </div>
                 </div>
                 <nav class="row" data-slide="1">
-                    <ul class="header__nav">
+
+                    <?php 
+                        wp_nav_menu( array(
+                            'menu'            => 'Main',          // (string) Название выводимого меню (указывается в админке при создании меню, приоритетнее 
+                            'container'       => false,           // (string) Контейнер меню. Обворачиватель ul. Указывается тег контейнера (по умолчанию в тег div)
+                            'menu_class'      => 'header__nav',   // (string) class самого меню (ul тега)
+                            'echo'            => true,            // (boolean) Выводить на экран или возвращать для обработки
+                            'fallback_cb'     => 'wp_page_menu',  // (string) Используемая (резервная) функция, если меню не существует (не удалось получить)
+                            'items_wrap'      => '<ul class="header__nav">%3$s</ul>',
+                            'depth'           => 1,               // (integer) Глубина вложенности (0 - неограничена, 2 - двухуровневое меню)
+                        ) );
+                    ?>
+
+                    <!-- <ul class="header__nav">
                         <li>
                             <a class="header__nav-item" href="#about">Про компанию</a>
                         </li>
@@ -71,7 +84,7 @@
                         <li>
                             <a class="header__nav-item" href="#contacts">Контакты и отзывы</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </nav>
             </div>
             <div class="header__hamburger">
